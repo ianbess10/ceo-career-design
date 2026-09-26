@@ -2,6 +2,8 @@
 
 An interactive single-page app that walks you through a six-stage career-design framework — from clarifying your North Star to building legacy.
 
+**Quick start for users:** [GETTING_STARTED.md](./GETTING_STARTED.md)
+
 ## Stack
 
 - React + Vite
@@ -14,6 +16,8 @@ An interactive single-page app that walks you through a six-stage career-design 
 npm install
 npm run dev
 ```
+
+Then open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Features
 
