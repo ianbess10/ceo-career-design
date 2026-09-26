@@ -18,11 +18,12 @@ npm run dev
 ## Features
 
 - 6-stage stepper with completion states
+- First-visit onboarding + “How it works”
 - Framework diagrams (compass, Venn, funnel, stack, loop, chain)
-- Checkable action lists persisted in `localStorage`
-- Per-step notes
-- Overall progress percentage
-- Export as PDF or plain text
-- Reset progress
+- Checkable action lists + per-step notes (persisted in `localStorage`)
+- Overall progress percentage + completion celebration
+- Reset current stage or all progress
+- Export as PDF / plain text, plus browser print layout
+- Skip link, focus styles, and labeled controls for accessibility
 
-Progress is stored under the key `ceo-career-design-progress`.
+Progress keys: `ceo-career-design-progress`, `ceo-career-design-onboarding`, `ceo-career-design-celebration`.

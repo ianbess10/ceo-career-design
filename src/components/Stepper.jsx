@@ -63,6 +63,9 @@ export default function Stepper({ steps, currentStep, stepCompletion, onSelect }
               : status.started
                 ? 'is-started'
                 : ''
+          const statusLabel = status.done
+            ? 'complete'
+            : `${status.completed} of ${status.total} actions done`
 
           return (
             <li key={step.number}>
@@ -71,8 +74,11 @@ export default function Stepper({ steps, currentStep, stepCompletion, onSelect }
                 className={`stepper__item ${stateClass}`}
                 onClick={() => onSelect(step.number)}
                 aria-current={isActive ? 'step' : undefined}
+                aria-label={`Stage ${step.number}: ${step.title}, ${statusLabel}`}
               >
-                <span className="stepper__icon">{stepIcons[step.number]}</span>
+                <span className="stepper__icon" aria-hidden="true">
+                  {stepIcons[step.number]}
+                </span>
                 <span className="stepper__text">
                   <span className="stepper__number">Stage {step.number}</span>
                   <span className="stepper__title">{step.title}</span>

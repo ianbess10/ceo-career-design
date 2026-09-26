@@ -122,3 +122,5 @@ export const steps = [
 ]
 
 export const STORAGE_KEY = 'ceo-career-design-progress'
+export const ONBOARDING_KEY = 'ceo-career-design-onboarding'
+export const CELEBRATION_KEY = 'ceo-career-design-celebration'
